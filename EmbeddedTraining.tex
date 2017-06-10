@@ -5,6 +5,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{textpos}
+\usepackage[export]{adjustbox}
 \author{Bram Vlerick}
 \title{Embedded Linux Training}
 %\setbeamercovered{transparent} 
@@ -13,6 +15,13 @@
 \institute{} 
 %\date{} 
 %\subject{} 
+
+\titlegraphic{\includegraphics[height=1.2cm]{logo}}
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.85\textwidth,-0.8cm)
+\includegraphics[height=0.8cm]{logo}
+\end{textblock*}}
+
 \begin{document}
 
 \begin{frame}
