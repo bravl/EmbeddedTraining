@@ -1,5 +1,11 @@
 \documentclass[11pt]{beamer}
 \usetheme{CambridgeUS}
+\definecolor{darkred}{RGB}{201, 41, 46}
+\setbeamercolor{titlegraphic}{fg=red}
+\setbeamercolor{frametitle}{fg=darkred}
+\setbeamercolor{title}{fg=darkred} 
+\setbeamercolor*{palette tertiary}{bg=darkred}
+
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -7,14 +13,18 @@
 \usepackage{graphicx}
 \usepackage{textpos}
 \usepackage[export]{adjustbox}
+\usepackage{standalone}
+
+
 \author{Bram Vlerick}
 \title{Embedded Linux Training}
 %\setbeamercovered{transparent} 
-%\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{navigation symbols}{} 
 %\logo{} 
 \institute{} 
 %\date{} 
 %\subject{} 
+
 
 \titlegraphic{\includegraphics[height=1.2cm]{logo}}
 \addtobeamertemplate{frametitle}{}{%
@@ -33,6 +43,7 @@
 %\end{frame}
 
 \input{EmbeddedTraining-Intro.tex}
+\input{EmbeddedTraining-BIOS.tex}
 
 
 \end{document}
